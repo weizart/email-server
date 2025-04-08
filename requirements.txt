@@ -1,0 +1,9 @@
+aiosmtpd
+aioimaplib
+aiohttp
+sqlalchemy[asyncio]
+aiosqlite
+bcrypt
+cryptography
+redis
+PyJWT
