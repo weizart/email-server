@@ -9,6 +9,7 @@ import asyncio
 import logging
 from mail_server import MailServer
 from config import MailServerConfig
+from web_client import WebClient
 
 # 配置日志到文件和控制台
 logging.basicConfig(
@@ -27,6 +28,18 @@ async def main():
     
     try:
         await server.setup()
+        
+        # 初始化邮件客户端
+        web_client = WebClient(config, server.storage, server.db_session_factory)
+        web_app = await web_client.setup()
+        
+        # 启动Web服务器
+        runner = web.AppRunner(web_app)
+        await runner.setup()
+        site = web.TCPSite(runner, config.web_host, config.web_port)
+        await site.start()
+        
+        # 启动邮件服务器
         await server.start()
         
         print(f"""
@@ -34,7 +47,7 @@ async def main():
 域名: {config.domain}
 SMTP服务器: {config.smtp_host}:{config.smtp_port}
 IMAP服务器: {config.imap_host}:{config.imap_port}
-Web管理界面: http://{config.web_host}:{config.web_port}/admin/login
+Web邮件客户端: http://{config.web_host}:{config.web_port}/login
 
 您可以使用以下设置配置邮件客户端:
 - 邮箱地址: example@{config.domain}
