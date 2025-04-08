@@ -16,7 +16,7 @@ class MailServerConfig:
         self.imap_host = "0.0.0.0"
         self.imap_port = 1430
         self.web_host = "0.0.0.0"
-        self.web_port = 8082
+        self.web_port = 3000
         self.admin_user = "admin"
         self.admin_password = "admin123"  # 请修改为安全的密码
         self.ssl_cert = "cert.pem"

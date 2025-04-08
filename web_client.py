@@ -31,16 +31,16 @@ class WebClient:
         
         token = request.cookies.get('token')
         if not token:
-            return web.HTTPFound('/login')
+            return web.HTTPFound('/client/login')
         
         try:
             decoded = jwt.decode(token, self.jwt_secret, algorithms=["HS256"])
             request['user'] = decoded
             return await handler(request)
         except jwt.ExpiredSignatureError:
-            return web.HTTPFound('/login')
+            return web.HTTPFound('/client/login')
         except jwt.InvalidTokenError:
-            return web.HTTPFound('/login')
+            return web.HTTPFound('/client/login')
 
     async def login_page(self, request):
         html_content = """
@@ -120,7 +120,7 @@ class WebClient:
                     const formData = new FormData(e.target);
                     
                     try {
-                        const response = await fetch('/login', {
+                        const response = await fetch('/client/login', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
@@ -132,7 +132,7 @@ class WebClient:
                         });
                         
                         if (response.ok) {
-                            window.location.href = '/mail';
+                            window.location.href = '/client/mail';
                         } else {
                             const data = await response.json();
                             errorDiv.textContent = data.error || '登录失败';
@@ -171,7 +171,7 @@ class WebClient:
                     return web.json_response({"error": "邮箱或密码错误"}, status=401)
 
                 token = self._create_token(email)
-                response = web.json_response({"message": "登录成功"})
+                response = web.json_response({"message": "登录成功", "redirect": "/client/mail"})
                 response.set_cookie('token', token, httponly=True, secure=False)
                 return response
                 
@@ -199,6 +199,21 @@ class WebClient:
                     background: #f8f9fa;
                     padding: 1rem;
                     border-right: 1px solid #ddd;
+                }
+                .sidebar a {
+                    display: block;
+                    padding: 0.5rem;
+                    color: #333;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    margin-bottom: 0.5rem;
+                }
+                .sidebar a:hover {
+                    background: #e9ecef;
+                }
+                .sidebar a.active {
+                    background: #007bff;
+                    color: white;
                 }
                 .main-content {
                     flex: 1;
@@ -274,9 +289,21 @@ class WebClient:
             <script>
                 let currentFolder = 'INBOX';
                 
+                // 添加文件夹点击事件处理
+                document.querySelectorAll('#folders a').forEach(link => {
+                    link.onclick = (e) => {
+                        e.preventDefault();
+                        currentFolder = e.target.dataset.folder;
+                        // 更新活动状态
+                        document.querySelectorAll('#folders a').forEach(a => a.classList.remove('active'));
+                        e.target.classList.add('active');
+                        loadMails();
+                    };
+                });
+                
                 async function loadMails() {
                     try {
-                        const response = await fetch(`/mails?folder=${currentFolder}`);
+                        const response = await fetch(`/client/mails?folder=${currentFolder}`);
                         const mails = await response.json();
                         
                         const mailList = document.getElementById('mailList');
@@ -300,7 +327,7 @@ class WebClient:
                 
                 async function showMail(mailId) {
                     try {
-                        const response = await fetch(`/mails/${mailId}`);
+                        const response = await fetch(`/client/mails/${mailId}`);
                         const mail = await response.json();
                         
                         const preview = document.getElementById('mailPreview');
@@ -343,7 +370,7 @@ class WebClient:
                         const formData = new FormData(e.target);
                         
                         try {
-                            const response = await fetch('/mails', {
+                            const response = await fetch('/client/mails', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json'
@@ -385,14 +412,34 @@ class WebClient:
 
     async def get_mails(self, request):
         try:
-            folder = request.query.get('folder', 'INBOX')
+            folder_name = request.query.get('folder', 'INBOX')
             async with self.session_factory() as session:
-                result = await session.execute(
-                    select(Email).where(
-                        Email.folder == folder,
-                        Email.recipient == request['user']['email']
-                    ).order_by(Email.date.desc())
+                # 首先获取文件夹ID
+                folder_result = await session.execute(
+                    select(Folder).where(
+                        Folder.name == folder_name,
+                        Folder.user_email == request['user']['email']
+                    )
                 )
+                folder = folder_result.scalar_one_or_none()
+                
+                if not folder:
+                    return web.json_response([], status=200)
+                
+                # 根据文件夹类型构建查询条件
+                query = select(Email).where(Email.folder_id == folder.id)
+                
+                if folder_name == 'SENT':
+                    # 已发送文件夹：显示发件人是当前用户的邮件
+                    query = query.where(Email.sender == request['user']['email'])
+                else:
+                    # 其他文件夹：显示收件人是当前用户的邮件
+                    query = query.where(Email.recipient == request['user']['email'])
+                
+                # 按日期降序排序
+                query = query.order_by(Email.date.desc())
+                
+                result = await session.execute(query)
                 mails = result.scalars().all()
                 
                 return web.json_response([
@@ -448,22 +495,70 @@ class WebClient:
                 return web.json_response({"error": "缺少必要参数"}, status=400)
             
             async with self.session_factory() as session:
+                # 获取已发送文件夹
+                sent_folder_result = await session.execute(
+                    select(Folder).where(
+                        Folder.name == 'SENT',
+                        Folder.user_email == request['user']['email']
+                    )
+                )
+                sent_folder = sent_folder_result.scalar_one_or_none()
+                
+                if not sent_folder:
+                    logger.error(f"找不到已发送文件夹 for user {request['user']['email']}")
+                    return web.json_response({"error": "找不到已发送文件夹"}, status=500)
+                
+                # 获取收件箱文件夹
+                inbox_folder_result = await session.execute(
+                    select(Folder).where(
+                        Folder.name == 'INBOX',
+                        Folder.user_email == request['user']['email']
+                    )
+                )
+                inbox_folder = inbox_folder_result.scalar_one_or_none()
+                
+                if not inbox_folder:
+                    logger.error(f"找不到收件箱文件夹 for user {request['user']['email']}")
+                    return web.json_response({"error": "找不到收件箱文件夹"}, status=500)
+                
+                # 为每个收件人创建邮件
                 for recipient in recipients:
-                    mail = Email(
+                    # 验证收件人域名
+                    if not recipient.endswith(f"@{self.config.domain}"):
+                        logger.warning(f"无效的收件人域名: {recipient}")
+                        continue
+                        
+                    # 创建发送的邮件
+                    sent_mail = Email(
                         sender=request['user']['email'],
                         recipient=recipient,
                         subject=subject,
                         body=body,
-                        folder='SENT',
-                        unread=False
+                        folder_id=sent_folder.id,
+                        unread=False,
+                        date=datetime.utcnow()
                     )
-                    session.add(mail)
+                    session.add(sent_mail)
+                    
+                    # 创建接收的邮件
+                    received_mail = Email(
+                        sender=request['user']['email'],
+                        recipient=recipient,
+                        subject=subject,
+                        body=body,
+                        folder_id=inbox_folder.id,
+                        unread=True,
+                        date=datetime.utcnow()
+                    )
+                    session.add(received_mail)
                 
                 await session.commit()
+                logger.info(f"邮件发送成功 from {request['user']['email']} to {recipients}")
                 return web.json_response({"message": "发送成功"})
+                
         except Exception as e:
-            logger.error(f"Failed to send mail: {str(e)}")
-            return web.json_response({"error": "发送失败"}, status=500)
+            logger.error(f"发送邮件失败: {str(e)}")
+            return web.json_response({"error": f"发送失败: {str(e)}"}, status=500)
 
     async def setup(self):
         self.web_app = web.Application(middlewares=[self.auth_middleware])

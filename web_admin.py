@@ -471,7 +471,7 @@ class WebAdmin:
                     return web.json_response({"error": "邮箱已存在"}, status=400)
 
                 # 创建默认文件夹
-                default_folders = ['INBOX', 'Sent', 'Trash', 'Drafts', 'Spam']
+                default_folders = ['INBOX', 'SENT', 'TRASH', 'DRAFTS', 'SPAM']
                 folders = [Folder(user_email=email, name=folder) for folder in default_folders]
                 session.add_all(folders)
                 await session.commit()

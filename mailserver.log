@@ -414,3 +414,706 @@
 2025-04-08 20:00:36,880 - INFO - web_admin - Attempting to list mailboxes
 2025-04-08 20:00:36,884 - INFO - web_admin - Found 1 mailboxes
 2025-04-08 20:00:36,884 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:00:36 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:8082/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:04:41,202 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:04:41,203 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:04:41,203 - ERROR - __main__ - 服务器运行时发生错误: 'MailServer' object has no attribute 'db_session_factory'
+2025-04-08 20:04:41,203 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:04:49,316 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:04:49,316 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:04:49,316 - ERROR - __main__ - 服务器运行时发生错误: 'MailServer' object has no attribute 'db_session_factory'
+2025-04-08 20:04:49,316 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:05:04,031 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:05:04,032 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:05:04,032 - ERROR - __main__ - 服务器运行时发生错误: 'MailServer' object has no attribute 'db_session_factory'
+2025-04-08 20:05:04,032 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:05:36,417 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:05:36,417 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:05:36,418 - ERROR - __main__ - 服务器运行时发生错误: name 'web' is not defined
+2025-04-08 20:05:36,418 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:06:23,892 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:06:23,893 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:06:23,905 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:06:23,906 - INFO - mail.log - Peer: ('127.0.0.1', 50109)
+2025-04-08 20:06:23,906 - INFO - mail.log - ('127.0.0.1', 50109) handling connection
+2025-04-08 20:06:23,906 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:06:23,906 - INFO - mail.log - ('127.0.0.1', 50109) EOF received
+2025-04-08 20:06:23,906 - INFO - mail.log - ('127.0.0.1', 50109) Connection lost during _handle_client()
+2025-04-08 20:06:23,907 - INFO - mail.log - ('127.0.0.1', 50109) connection lost
+2025-04-08 20:06:23,907 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:06:23,907 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8082): address already in use
+2025-04-08 20:06:23,907 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:06:23,907 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:06:23,907 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:06:23,907 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:06:23,907 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8082): address already in use
+2025-04-08 20:06:23,907 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:06:23,907 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:06:42,838 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:06:42,838 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:06:42,846 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:06:42,846 - INFO - mail.log - Peer: ('127.0.0.1', 50115)
+2025-04-08 20:06:42,846 - INFO - mail.log - ('127.0.0.1', 50115) handling connection
+2025-04-08 20:06:42,846 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:06:42,847 - INFO - mail.log - ('127.0.0.1', 50115) EOF received
+2025-04-08 20:06:42,847 - INFO - mail.log - ('127.0.0.1', 50115) Connection lost during _handle_client()
+2025-04-08 20:06:42,847 - INFO - mail.log - ('127.0.0.1', 50115) connection lost
+2025-04-08 20:06:42,847 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:06:42,847 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8082): address already in use
+2025-04-08 20:06:42,847 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:06:42,847 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:06:42,848 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:06:42,848 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:06:42,848 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8082): address already in use
+2025-04-08 20:06:42,848 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:06:42,848 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:07:30,824 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:07:30,824 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:07:30,832 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:07:30,832 - INFO - mail.log - Peer: ('127.0.0.1', 50173)
+2025-04-08 20:07:30,833 - INFO - mail.log - ('127.0.0.1', 50173) handling connection
+2025-04-08 20:07:30,833 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:07:30,833 - INFO - mail.log - ('127.0.0.1', 50173) EOF received
+2025-04-08 20:07:30,833 - INFO - mail.log - ('127.0.0.1', 50173) Connection lost during _handle_client()
+2025-04-08 20:07:30,833 - INFO - mail.log - ('127.0.0.1', 50173) connection lost
+2025-04-08 20:07:30,833 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:07:30,833 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8083): address already in use
+2025-04-08 20:07:30,834 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:07:30,834 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:07:30,834 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:07:30,834 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:07:30,834 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8083): address already in use
+2025-04-08 20:07:30,834 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:07:30,834 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:07:48,967 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:07:48,968 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:07:48,976 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:07:48,976 - INFO - mail.log - Peer: ('127.0.0.1', 50196)
+2025-04-08 20:07:48,977 - INFO - mail.log - ('127.0.0.1', 50196) handling connection
+2025-04-08 20:07:48,977 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:07:48,977 - INFO - mail.log - ('127.0.0.1', 50196) EOF received
+2025-04-08 20:07:48,977 - INFO - mail.log - ('127.0.0.1', 50196) Connection lost during _handle_client()
+2025-04-08 20:07:48,977 - INFO - mail.log - ('127.0.0.1', 50196) connection lost
+2025-04-08 20:07:48,977 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:07:48,978 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8888): address already in use
+2025-04-08 20:07:48,978 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:07:48,978 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:07:48,978 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:07:48,978 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:07:48,978 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 8888): address already in use
+2025-04-08 20:07:48,978 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:07:48,978 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:08:10,729 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:08:10,730 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:08:10,738 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:08:10,738 - INFO - mail.log - Peer: ('127.0.0.1', 50202)
+2025-04-08 20:08:10,738 - INFO - mail.log - ('127.0.0.1', 50202) handling connection
+2025-04-08 20:08:10,739 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:08:10,739 - INFO - mail.log - ('127.0.0.1', 50202) EOF received
+2025-04-08 20:08:10,739 - INFO - mail.log - ('127.0.0.1', 50202) Connection lost during _handle_client()
+2025-04-08 20:08:10,739 - INFO - mail.log - ('127.0.0.1', 50202) connection lost
+2025-04-08 20:08:10,739 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:08:10,739 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 9999): address already in use
+2025-04-08 20:08:10,739 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:08:10,740 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:08:10,740 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:08:10,740 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:08:10,740 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 9999): address already in use
+2025-04-08 20:08:10,740 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:08:10,740 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:09:04,201 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:09:04,201 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:09:04,214 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:09:04,214 - INFO - mail.log - Peer: ('127.0.0.1', 50228)
+2025-04-08 20:09:04,215 - INFO - mail.log - ('127.0.0.1', 50228) handling connection
+2025-04-08 20:09:04,215 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:09:04,215 - INFO - mail.log - ('127.0.0.1', 50228) EOF received
+2025-04-08 20:09:04,215 - INFO - mail.log - ('127.0.0.1', 50228) Connection lost during _handle_client()
+2025-04-08 20:09:04,215 - INFO - mail.log - ('127.0.0.1', 50228) connection lost
+2025-04-08 20:09:04,215 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:09:04,215 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 3000): address already in use
+2025-04-08 20:09:04,216 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:09:04,216 - INFO - mail_server - IMAP server stopped
+2025-04-08 20:09:04,216 - INFO - mail_server - Web admin interface stopped
+2025-04-08 20:09:04,216 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:09:04,216 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 3000): address already in use
+2025-04-08 20:09:04,216 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:09:04,216 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:09:48,645 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:09:48,645 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:09:48,652 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:09:48,652 - INFO - mail.log - Peer: ('127.0.0.1', 50241)
+2025-04-08 20:09:48,653 - INFO - mail.log - ('127.0.0.1', 50241) handling connection
+2025-04-08 20:09:48,653 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:09:48,653 - INFO - mail.log - ('127.0.0.1', 50241) EOF received
+2025-04-08 20:09:48,653 - INFO - mail.log - ('127.0.0.1', 50241) Connection lost during _handle_client()
+2025-04-08 20:09:48,654 - INFO - mail.log - ('127.0.0.1', 50241) connection lost
+2025-04-08 20:09:48,654 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:09:48,654 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:09:57,929 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:09:57 +0800] "GET /client/login HTTP/1.1" 200 4062 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:09:58,817 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:09:58 +0800] "GET /favicon.ico HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:10:15,068 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:10:15 +0800] "POST /login HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:10:33,546 - INFO - web_admin - Auth middleware processing request: GET /admin/login
+2025-04-08 20:10:33,547 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:10:33,548 - INFO - web_admin - Serving login page
+2025-04-08 20:10:33,561 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:10:33 +0800] "GET /admin/login HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:10:39,790 - INFO - web_admin - Auth middleware processing request: POST /admin/login
+2025-04-08 20:10:39,791 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:10:39,791 - INFO - web_admin - Login attempt for username: admin
+2025-04-08 20:10:39,792 - INFO - web_admin - Token created successfully for user: admin
+2025-04-08 20:10:39,792 - INFO - web_admin - Successful login for username: admin
+2025-04-08 20:10:39,793 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:10:39 +0800] "POST /admin/login HTTP/1.1" 200 423 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:10:39,811 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:10:39,811 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:10:39,812 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:10:39,812 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:10:39,812 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:10:39 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:10:39,908 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:10:39,909 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:10:39,909 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:10:39,909 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:10:39,944 - ERROR - web_admin - Failed to list mailboxes: Could not determine join condition between parent/child tables on relationship User.emails_received - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-04-08 20:10:39,945 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:10:39 +0800] "GET /admin/mailboxes/list HTTP/1.1" 500 240 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:11:32,013 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:11:32,014 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:11:32,035 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:11:32,035 - INFO - mail.log - Peer: ('127.0.0.1', 50289)
+2025-04-08 20:11:32,035 - INFO - mail.log - ('127.0.0.1', 50289) handling connection
+2025-04-08 20:11:32,036 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:11:32,036 - INFO - mail.log - ('127.0.0.1', 50289) EOF received
+2025-04-08 20:11:32,036 - INFO - mail.log - ('127.0.0.1', 50289) Connection lost during _handle_client()
+2025-04-08 20:11:32,036 - INFO - mail.log - ('127.0.0.1', 50289) connection lost
+2025-04-08 20:11:32,036 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:11:32,036 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:11:38,548 - INFO - web_admin - Auth middleware processing request: GET /admin/login
+2025-04-08 20:11:38,549 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:11:38,549 - INFO - web_admin - Serving login page
+2025-04-08 20:11:38,551 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:11:38 +0800] "GET /admin/login HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:11:44,261 - INFO - web_admin - Auth middleware processing request: POST /admin/login
+2025-04-08 20:11:44,262 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:11:44,262 - INFO - web_admin - Login attempt for username: admin
+2025-04-08 20:11:44,263 - INFO - web_admin - Token created successfully for user: admin
+2025-04-08 20:11:44,263 - INFO - web_admin - Successful login for username: admin
+2025-04-08 20:11:44,263 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:11:44 +0800] "POST /admin/login HTTP/1.1" 200 423 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:11:44,283 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:11:44,283 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:11:44,284 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:11:44,284 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:11:44,284 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:11:44 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:11:44,379 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:11:44,380 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:11:44,380 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:11:44,380 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:11:44,400 - ERROR - web_admin - Failed to list mailboxes: Could not determine join condition between parent/child tables on relationship Folder.emails - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2025-04-08 20:11:44,400 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:11:44 +0800] "GET /admin/mailboxes/list HTTP/1.1" 500 240 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:12:26,590 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:12:26,591 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:12:26,599 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:12:26,599 - INFO - mail.log - Peer: ('127.0.0.1', 50304)
+2025-04-08 20:12:26,600 - INFO - mail.log - ('127.0.0.1', 50304) handling connection
+2025-04-08 20:12:26,600 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:12:26,600 - INFO - mail.log - ('127.0.0.1', 50304) EOF received
+2025-04-08 20:12:26,600 - INFO - mail.log - ('127.0.0.1', 50304) Connection lost during _handle_client()
+2025-04-08 20:12:26,600 - INFO - mail.log - ('127.0.0.1', 50304) connection lost
+2025-04-08 20:12:26,600 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:12:26,601 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:12:47,013 - INFO - web_admin - Auth middleware processing request: GET /admin/login
+2025-04-08 20:12:47,013 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:12:47,013 - INFO - web_admin - Serving login page
+2025-04-08 20:12:47,014 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:12:47 +0800] "GET /admin/login HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:12:52,296 - INFO - web_admin - Auth middleware processing request: POST /admin/login
+2025-04-08 20:12:52,296 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:12:52,297 - INFO - web_admin - Login attempt for username: admin
+2025-04-08 20:12:52,297 - INFO - web_admin - Token created successfully for user: admin
+2025-04-08 20:12:52,297 - INFO - web_admin - Successful login for username: admin
+2025-04-08 20:12:52,298 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:12:52 +0800] "POST /admin/login HTTP/1.1" 200 423 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:12:52,324 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:12:52,324 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:12:52,324 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:12:52,324 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:12:52,325 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:12:52 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:12:52,412 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:12:52,412 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:12:52,412 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:12:52,412 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:12:52,441 - ERROR - web_admin - Failed to list mailboxes: Could not locate any relevant foreign key columns for primary join condition 'folders.user_email = emails.recipient AND folders.name = emails.folder' on relationship Folder.emails.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or are annotated in the join condition with the foreign() annotation.
+2025-04-08 20:12:52,443 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:12:52 +0800] "GET /admin/mailboxes/list HTTP/1.1" 500 240 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:13:52,006 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:13:52,007 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:13:52,016 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:13:52,016 - INFO - mail.log - Peer: ('127.0.0.1', 50320)
+2025-04-08 20:13:52,017 - INFO - mail.log - ('127.0.0.1', 50320) handling connection
+2025-04-08 20:13:52,017 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:13:52,017 - INFO - mail.log - ('127.0.0.1', 50320) EOF received
+2025-04-08 20:13:52,017 - INFO - mail.log - ('127.0.0.1', 50320) Connection lost during _handle_client()
+2025-04-08 20:13:52,017 - INFO - mail.log - ('127.0.0.1', 50320) connection lost
+2025-04-08 20:13:52,017 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:13:52,018 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:13:59,052 - INFO - web_admin - Auth middleware processing request: GET /admin/login
+2025-04-08 20:13:59,053 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:13:59,053 - INFO - web_admin - Serving login page
+2025-04-08 20:13:59,053 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:13:59 +0800] "GET /admin/login HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:05,299 - INFO - web_admin - Auth middleware processing request: POST /admin/login
+2025-04-08 20:14:05,299 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:14:05,300 - INFO - web_admin - Login attempt for username: admin
+2025-04-08 20:14:05,300 - INFO - web_admin - Token created successfully for user: admin
+2025-04-08 20:14:05,300 - INFO - web_admin - Successful login for username: admin
+2025-04-08 20:14:05,302 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:05 +0800] "POST /admin/login HTTP/1.1" 200 423 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:05,321 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:14:05,321 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:14:05,322 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:14:05,322 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:14:05,322 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:05 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:05,431 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:14:05,439 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:14:05,440 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:14:05,440 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:14:05,472 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:14:05,474 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:05 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:07,384 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:14:07,384 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:14:07,385 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:14:07,385 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:14:07,387 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:14:07,388 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:07 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:39,388 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:14:39,389 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:14:39,397 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:14:39,398 - INFO - mail.log - Peer: ('127.0.0.1', 50335)
+2025-04-08 20:14:39,398 - INFO - mail.log - ('127.0.0.1', 50335) handling connection
+2025-04-08 20:14:39,398 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:14:39,398 - INFO - mail.log - ('127.0.0.1', 50335) EOF received
+2025-04-08 20:14:39,398 - INFO - mail.log - ('127.0.0.1', 50335) Connection lost during _handle_client()
+2025-04-08 20:14:39,398 - INFO - mail.log - ('127.0.0.1', 50335) connection lost
+2025-04-08 20:14:39,398 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:14:39,399 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:14:43,440 - INFO - web_admin - Auth middleware processing request: GET /admin/login
+2025-04-08 20:14:43,440 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:14:43,440 - INFO - web_admin - Serving login page
+2025-04-08 20:14:43,442 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:43 +0800] "GET /admin/login HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:50,188 - INFO - web_admin - Auth middleware processing request: POST /admin/login
+2025-04-08 20:14:50,189 - INFO - web_admin - Skipping auth for login request
+2025-04-08 20:14:50,189 - INFO - web_admin - Login attempt for username: admin
+2025-04-08 20:14:50,190 - INFO - web_admin - Token created successfully for user: admin
+2025-04-08 20:14:50,190 - INFO - web_admin - Successful login for username: admin
+2025-04-08 20:14:50,190 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:50 +0800] "POST /admin/login HTTP/1.1" 200 423 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:50,209 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:14:50,209 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:14:50,209 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:14:50,209 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:14:50,210 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:50 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:14:50,291 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:14:50,292 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:14:50,292 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:14:50,293 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:14:50,336 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:14:50,338 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:14:50 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:02,104 - INFO - web_admin - Auth middleware processing request: POST /admin/mailboxes/create
+2025-04-08 20:15:02,104 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:15:02,105 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:15:02,105 - INFO - web_admin - Attempting to create mailbox: test@weizart.com
+2025-04-08 20:15:02,507 - INFO - web_admin - Successfully created mailbox: test@weizart.com
+2025-04-08 20:15:02,508 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:02 +0800] "POST /admin/mailboxes/create HTTP/1.1" 200 211 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:03,655 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:15:03,655 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:15:03,656 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:15:03,656 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:15:03,658 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:15:03,659 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:03 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:04,445 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:15:04,445 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:15:04,445 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:15:04,446 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:15:04,447 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:15:04,448 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:04 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:19,988 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:19 +0800] "GET /client/login HTTP/1.1" 200 4062 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:20,902 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:15:20,902 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:15:20,903 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:15:20,903 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:15:20,909 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:15:20,911 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:20 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:26,637 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:26 +0800] "POST /login HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:15:50,913 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:15:50,915 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:15:50,916 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:15:50,916 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:15:50,921 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:15:50,922 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:15:50 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:16:20,905 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:16:20,906 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:16:20,906 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:16:20,906 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:16:20,907 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:16:20,907 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:16:20 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:16:50,908 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:16:50,909 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:16:50,910 - INFO - web_admin - Token decoded successfully for user: admin
+2025-04-08 20:16:50,910 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:16:50,915 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:16:50,916 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:16:50 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:17:00,508 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:17:00,509 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:17:05,514 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 2525): address already in use
+2025-04-08 20:17:05,515 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:17:05,515 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:17:05,515 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 2525): address already in use
+2025-04-08 20:17:05,515 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:17:05,516 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:17:31,547 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:17:31,547 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:17:31,555 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:17:31,555 - INFO - mail.log - Peer: ('127.0.0.1', 50378)
+2025-04-08 20:17:31,555 - INFO - mail.log - ('127.0.0.1', 50378) handling connection
+2025-04-08 20:17:31,555 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:17:31,555 - INFO - mail.log - ('127.0.0.1', 50378) EOF received
+2025-04-08 20:17:31,556 - INFO - mail.log - ('127.0.0.1', 50378) Connection lost during _handle_client()
+2025-04-08 20:17:31,556 - INFO - mail.log - ('127.0.0.1', 50378) connection lost
+2025-04-08 20:17:31,556 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:17:31,556 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:17:36,597 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:17:36 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:17:51,050 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:17:50 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:17:51,068 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:17:51 +0800] "GET /client/mail HTTP/1.1" 200 8276 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:17:51,153 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:17:51 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:18:21,129 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:18:21 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:18:23,666 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:18:23 +0800] "POST /mails HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:18:30,911 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:18:30,912 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:18:30,914 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:18:30,915 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:18:30,937 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:18:30,939 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:18:30 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:18:51,135 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:18:51 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:21,207 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:21 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:40,246 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:19:40,247 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:19:40,257 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:19:40,257 - INFO - mail.log - Peer: ('127.0.0.1', 50402)
+2025-04-08 20:19:40,258 - INFO - mail.log - ('127.0.0.1', 50402) handling connection
+2025-04-08 20:19:40,258 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:19:40,258 - INFO - mail.log - ('127.0.0.1', 50402) EOF received
+2025-04-08 20:19:40,258 - INFO - mail.log - ('127.0.0.1', 50402) Connection lost during _handle_client()
+2025-04-08 20:19:40,258 - INFO - mail.log - ('127.0.0.1', 50402) connection lost
+2025-04-08 20:19:40,258 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:19:40,258 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:19:45,763 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:45 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:51,911 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:51 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:54,441 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:54 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:54,459 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:54 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:54,549 - ERROR - web_client - Failed to get mails: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Email.folder.has(**criteria).
+2025-04-08 20:19:54,549 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:54 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 500 228 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:19:56,394 - ERROR - web_client - Failed to get mails: Mapped instance expected for relationship comparison to object.   Classes, queries and other SQL elements are not accepted in this context; for comparison with a subquery, use Email.folder.has(**criteria).
+2025-04-08 20:19:56,395 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:19:56 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 500 228 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:02,005 - ERROR - web_client - Failed to send mail: 'str' object has no attribute '_sa_instance_state'
+2025-04-08 20:20:02,006 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:02 +0800] "POST /client/mails HTTP/1.1" 500 216 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:46,629 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:20:46,630 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:20:46,642 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:20:46,642 - INFO - mail.log - Peer: ('127.0.0.1', 50447)
+2025-04-08 20:20:46,642 - INFO - mail.log - ('127.0.0.1', 50447) handling connection
+2025-04-08 20:20:46,642 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:20:46,643 - INFO - mail.log - ('127.0.0.1', 50447) EOF received
+2025-04-08 20:20:46,643 - INFO - mail.log - ('127.0.0.1', 50447) Connection lost during _handle_client()
+2025-04-08 20:20:46,643 - INFO - mail.log - ('127.0.0.1', 50447) connection lost
+2025-04-08 20:20:46,643 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:20:46,644 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:20:50,776 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:50 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:53,393 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:52 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:53,421 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:53 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:53,510 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:53 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:54,901 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:54 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:20:58,244 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:20:58 +0800] "POST /client/mails HTTP/1.1" 500 246 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:00,835 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:00 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:23,503 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:23 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:24,906 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:24 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:30,907 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:30 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:53,507 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:53 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:21:54,904 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:21:54 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:10,769 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:22:10,770 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:22:10,784 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:22:10,784 - INFO - mail.log - Peer: ('127.0.0.1', 50500)
+2025-04-08 20:22:10,784 - INFO - mail.log - ('127.0.0.1', 50500) handling connection
+2025-04-08 20:22:10,784 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:22:10,785 - INFO - mail.log - ('127.0.0.1', 50500) EOF received
+2025-04-08 20:22:10,785 - INFO - mail.log - ('127.0.0.1', 50500) Connection lost during _handle_client()
+2025-04-08 20:22:10,785 - INFO - mail.log - ('127.0.0.1', 50500) connection lost
+2025-04-08 20:22:10,785 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:22:10,785 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:22:14,510 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:14 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:17,485 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:17 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:17,496 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:17 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:17,607 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:17 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:22,994 - ERROR - web_client - 找不到已发送文件夹 for user test@weizart.com
+2025-04-08 20:22:22,995 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:22 +0800] "POST /client/mails HTTP/1.1" 500 246 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:23,906 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:23 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:30,910 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:30 +0800] "GET /mails?folder=INBOX HTTP/1.1" 404 175 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:30,916 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:30 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:47,599 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:47 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:22:53,905 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:22:53 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:00,834 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:23:00,835 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:23:00,844 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:23:00,845 - INFO - mail.log - Peer: ('127.0.0.1', 50544)
+2025-04-08 20:23:00,845 - INFO - mail.log - ('127.0.0.1', 50544) handling connection
+2025-04-08 20:23:00,845 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:23:00,845 - INFO - mail.log - ('127.0.0.1', 50544) EOF received
+2025-04-08 20:23:00,845 - INFO - mail.log - ('127.0.0.1', 50544) Connection lost during _handle_client()
+2025-04-08 20:23:00,845 - INFO - mail.log - ('127.0.0.1', 50544) connection lost
+2025-04-08 20:23:00,845 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:23:00,846 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:23:17,593 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:17 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:35,535 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:23:35,536 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:23:35,544 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:23:35,544 - INFO - mail.log - Peer: ('127.0.0.1', 50557)
+2025-04-08 20:23:35,544 - INFO - mail.log - ('127.0.0.1', 50557) handling connection
+2025-04-08 20:23:35,545 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:23:35,545 - INFO - mail.log - ('127.0.0.1', 50557) EOF received
+2025-04-08 20:23:35,545 - INFO - mail.log - ('127.0.0.1', 50557) Connection lost during _handle_client()
+2025-04-08 20:23:35,545 - INFO - mail.log - ('127.0.0.1', 50557) connection lost
+2025-04-08 20:23:35,545 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:23:35,545 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:23:40,788 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:40 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:43,003 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:42 +0800] "POST /client/login HTTP/1.1" 401 225 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:45,058 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:23:45,059 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:23:45,059 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:23:45,059 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:23:45,062 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:23:45,064 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:45 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:47,901 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:47 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:50,259 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:23:50,259 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:23:50,259 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:23:50,260 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:23:50,261 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:23:50,262 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:50 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:50,570 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:23:50,571 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:23:50,571 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:23:50,571 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:23:50,573 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:23:50,574 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:50 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:51,873 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes
+2025-04-08 20:23:51,873 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:23:51,873 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:23:51,873 - INFO - web_admin - Serving mailboxes page
+2025-04-08 20:23:51,874 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:51 +0800] "GET /admin/mailboxes HTTP/1.1" 200 8091 "http://0.0.0.0:3000/admin/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:23:51,980 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:23:51,981 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:23:51,981 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:23:51,981 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:23:51,983 - INFO - web_admin - Found 0 mailboxes
+2025-04-08 20:23:51,984 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:23:51 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 177 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:02,800 - INFO - web_admin - Auth middleware processing request: POST /admin/mailboxes/create
+2025-04-08 20:24:02,801 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:24:02,801 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:24:02,801 - INFO - web_admin - Attempting to create mailbox: test@weizart.com
+2025-04-08 20:24:03,204 - INFO - web_admin - Successfully created mailbox: test@weizart.com
+2025-04-08 20:24:03,204 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:02 +0800] "POST /admin/mailboxes/create HTTP/1.1" 200 211 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:04,109 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:24:04,110 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:24:04,110 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:24:04,110 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:24:04,112 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:24:04,112 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:04 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:06,575 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:06 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:06,590 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:06 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:06,681 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:06 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:15,017 - WARNING - web_client - 无效的收件人域名: weizart@outlook.com
+2025-04-08 20:24:15,018 - INFO - web_client - 邮件发送成功 from test@weizart.com to ['weizart@outlook.com']
+2025-04-08 20:24:15,019 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:15 +0800] "POST /client/mails HTTP/1.1" 200 199 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:16,067 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:16 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:20,988 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:20 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:22,570 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:22 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:22,701 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:22 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:22,846 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:22 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:22,899 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:24:22,900 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:24:22,900 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:24:22,900 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:24:22,902 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:24:22,903 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:22 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:22,960 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:22 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:36,654 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:36 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:24:52,899 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:24:52,900 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:24:52,900 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:24:52,900 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:24:52,901 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:24:52,901 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:24:52 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:06,657 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:06 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:22,900 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:25:22,901 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:25:22,901 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:25:22,901 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:25:22,903 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:25:22,904 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:22 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:26,919 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:25:26,920 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:25:31,925 - ERROR - mail_server - Failed to start services: [Errno 48] error while attempting to bind on address ('0.0.0.0', 2525): address already in use
+2025-04-08 20:25:31,926 - INFO - mail_server - SMTP server stopped
+2025-04-08 20:25:31,926 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:25:31,927 - ERROR - __main__ - 服务器运行时发生错误: [Errno 48] error while attempting to bind on address ('0.0.0.0', 2525): address already in use
+2025-04-08 20:25:31,927 - ERROR - mail_server - Error while stopping services: SMTP daemon not running
+2025-04-08 20:25:31,928 - INFO - mail_server - Mail server has been fully stopped
+2025-04-08 20:25:38,962 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:25:38,963 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:25:38,975 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:25:38,976 - INFO - mail.log - Peer: ('127.0.0.1', 50623)
+2025-04-08 20:25:38,976 - INFO - mail.log - ('127.0.0.1', 50623) handling connection
+2025-04-08 20:25:38,976 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:25:38,976 - INFO - mail.log - ('127.0.0.1', 50623) EOF received
+2025-04-08 20:25:38,977 - INFO - mail.log - ('127.0.0.1', 50623) Connection lost during _handle_client()
+2025-04-08 20:25:38,977 - INFO - mail.log - ('127.0.0.1', 50623) connection lost
+2025-04-08 20:25:38,977 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:25:38,977 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:25:42,354 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:42 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:44,835 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:44 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:44,856 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:44 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:44,945 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:44 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:52,901 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:25:52,902 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:25:52,903 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:25:52,904 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:25:52,910 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:25:52,911 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:52 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:52,951 - WARNING - web_client - 无效的收件人域名: weizart@outlook.com
+2025-04-08 20:25:52,951 - INFO - web_client - 邮件发送成功 from test@weizart.com to ['weizart@outlook.com']
+2025-04-08 20:25:52,952 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:52 +0800] "POST /client/mails HTTP/1.1" 200 199 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:53,916 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:53 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:55,675 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:55 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:55,802 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:55 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:55,960 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:55 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:56,097 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:56 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:25:56,223 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:25:56 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:06,904 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:06 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:14,926 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:14 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:28,772 - INFO - web_client - 邮件发送成功 from test@weizart.com to ['weizart@weizart.com']
+2025-04-08 20:26:28,773 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:28 +0800] "POST /client/mails HTTP/1.1" 200 199 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:29,789 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:29 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:35,459 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:26:35,460 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:26:35,460 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:26:35,460 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:26:35,462 - INFO - web_admin - Found 1 mailboxes
+2025-04-08 20:26:35,463 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:35 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 250 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:36,903 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:36 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:45,903 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:45 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:46,331 - INFO - web_admin - Auth middleware processing request: POST /admin/mailboxes/create
+2025-04-08 20:26:46,331 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:26:46,331 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:26:46,331 - INFO - web_admin - Attempting to create mailbox: weizart@weizart.com
+2025-04-08 20:26:46,732 - INFO - web_admin - Successfully created mailbox: weizart@weizart.com
+2025-04-08 20:26:46,732 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:46 +0800] "POST /admin/mailboxes/create HTTP/1.1" 200 211 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:47,809 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:26:47,809 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:26:47,809 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:26:47,809 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:26:47,811 - INFO - web_admin - Found 2 mailboxes
+2025-04-08 20:26:47,811 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:47 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 329 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:49,170 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:26:49,170 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:26:49,171 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:26:49,171 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:26:49,173 - INFO - web_admin - Found 2 mailboxes
+2025-04-08 20:26:49,174 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:49 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 329 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:52,897 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:26:52,898 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:26:52,898 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:26:52,898 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:26:52,899 - INFO - web_admin - Found 2 mailboxes
+2025-04-08 20:26:52,900 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:52 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 329 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:55,144 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:55 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:26:55,227 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:26:55 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:02,151 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:02 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:08,956 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:08 +0800] "POST /client/login HTTP/1.1" 200 410 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:08,972 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:08 +0800] "GET /client/mail HTTP/1.1" 200 8297 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:09,039 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:09 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:14,919 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:14 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:15,663 - INFO - web_client - 邮件发送成功 from weizart@weizart.com to ['weizart@weizart.com']
+2025-04-08 20:27:15,664 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:15 +0800] "POST /client/mails HTTP/1.1" 200 199 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:17,419 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:17 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 278 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:18,770 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:18 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:21,494 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:21 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:22,899 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:27:22,899 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:27:22,900 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:27:22,900 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:27:22,902 - INFO - web_admin - Found 2 mailboxes
+2025-04-08 20:27:22,903 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:22 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 329 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:27,106 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:27 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:39,898 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:39 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:27:44,943 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:27:44 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:31,129 - INFO - web_admin - WebAdmin initialized with config domain: weizart.com
+2025-04-08 20:28:31,130 - INFO - mail_server - Mail server setup completed successfully
+2025-04-08 20:28:31,139 - INFO - mail.log - Available AUTH mechanisms: LOGIN(builtin) PLAIN(builtin)
+2025-04-08 20:28:31,139 - INFO - mail.log - Peer: ('127.0.0.1', 50738)
+2025-04-08 20:28:31,139 - INFO - mail.log - ('127.0.0.1', 50738) handling connection
+2025-04-08 20:28:31,139 - INFO - mail_server - SMTP server started at 0.0.0.0:2525
+2025-04-08 20:28:31,139 - INFO - mail.log - ('127.0.0.1', 50738) EOF received
+2025-04-08 20:28:31,140 - INFO - mail.log - ('127.0.0.1', 50738) Connection lost during _handle_client()
+2025-04-08 20:28:31,140 - INFO - mail.log - ('127.0.0.1', 50738) connection lost
+2025-04-08 20:28:31,140 - INFO - mail_server - IMAP server started at 0.0.0.0:1430
+2025-04-08 20:28:31,140 - INFO - mail_server - Web admin interface started at 0.0.0.0:3000
+2025-04-08 20:28:39,915 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:39 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:44,192 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:44 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:45,906 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:45 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:46,733 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:46 +0800] "POST /client/login HTTP/1.1" 200 406 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:46,749 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:46 +0800] "GET /client/mail HTTP/1.1" 200 9388 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:46,841 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:46 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:47,807 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:47 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:48,511 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:48 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 276 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:49,260 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:49 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:49,842 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:49 +0800] "GET /client/mails?folder=TRASH HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:50,257 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:50 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 276 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:50,719 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:50 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:51,281 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:51 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 276 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:52,121 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:52 +0800] "GET /client/mails/1 HTTP/1.1" 200 312 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:54,768 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:54 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:55,686 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:55 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 276 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:28:56,372 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:28:56 +0800] "GET /client/mails/1 HTTP/1.1" 200 312 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:01,220 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:01 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:08,795 - INFO - web_admin - Auth middleware processing request: GET /admin/mailboxes/list
+2025-04-08 20:29:08,795 - INFO - web_admin - Received token from cookie: eyJhbGciOiJIUzI1NiIs...
+2025-04-08 20:29:08,795 - INFO - web_admin - Token decoded successfully for user: None
+2025-04-08 20:29:08,796 - INFO - web_admin - Attempting to list mailboxes
+2025-04-08 20:29:08,798 - INFO - web_admin - Found 2 mailboxes
+2025-04-08 20:29:08,800 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:08 +0800] "GET /admin/mailboxes/list HTTP/1.1" 200 329 "http://0.0.0.0:3000/admin/mailboxes" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:16,806 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:16 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 276 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:19,183 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:19 +0800] "GET /client/login HTTP/1.1" 200 4076 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:25,386 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:24 +0800] "POST /client/login HTTP/1.1" 200 410 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:25,402 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:25 +0800] "GET /client/mail HTTP/1.1" 200 9388 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:25,465 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:25 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:27,252 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:27 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:27,667 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:27 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:30,395 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:30 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:31,235 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:31 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:31,890 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:31 +0800] "GET /client/mails?folder=TRASH HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:32,334 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:32 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:32,731 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:32 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:33,043 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:33 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:33,499 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:33 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:33,957 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:33 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:34,686 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:34 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:35,320 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:35 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:35,463 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:35 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:35,855 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:35 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:36,236 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:36 +0800] "GET /client/mails/3 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:36,379 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:36 +0800] "GET /client/mails/3 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:36,823 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:36 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:37,652 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:37 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:38,669 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:38 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:39,196 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:39 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:39,747 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:39 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:39,883 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:39 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:44,851 - WARNING - web_client - 无效的收件人域名: weizart@outlook.com
+2025-04-08 20:29:44,852 - INFO - web_client - 邮件发送成功 from weizart@weizart.com to ['weizart@outlook.com']
+2025-04-08 20:29:44,853 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:44 +0800] "POST /client/mails HTTP/1.1" 200 199 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:45,886 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:45 +0800] "GET /client/mails?folder=DRAFT HTTP/1.1" 200 161 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:46,755 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:46 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:47,309 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:47 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:48,179 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:48 +0800] "GET /client/mails?folder=SENT HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:49,609 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:49 +0800] "GET /client/mail HTTP/1.1" 200 9388 "http://0.0.0.0:3000/client/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:49,681 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:49 +0800] "GET /client/mails?folder=INBOX HTTP/1.1" 200 279 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"
+2025-04-08 20:29:50,596 - INFO - aiohttp.access - 127.0.0.1 [08/Apr/2025:20:29:50 +0800] "GET /client/mails/4 HTTP/1.1" 200 315 "http://0.0.0.0:3000/client/mail" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 Edg/135.0.0.0"

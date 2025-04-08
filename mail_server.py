@@ -16,12 +16,14 @@ from aiohttp import web
 from smtp_handler import SMTPHandler
 from imap_handler import IMAPProtocol, create_imap_server
 from web_admin import WebAdmin
+from web_client import WebClient
 from config import MailServerConfig
 from storage import MailStorage
 from database import AsyncSessionLocal, init_db
-from models import User
+from models import User, SessionLocal
 from sqlalchemy.future import select
 import bcrypt
+from aioimaplib import aioimaplib
 
 logger = logging.getLogger(__name__)
 
@@ -204,10 +206,12 @@ class MailServer:
     def __init__(self, config: MailServerConfig):
         self.config = config
         self.storage = MailStorage(config)
+        self.db_session_factory = AsyncSessionLocal
+        self.web_admin = None
+        self.web_client = None
+        self.web_app = None
         self.smtp_controller = None
         self.imap_server = None
-        self.web_admin = None
-        self.web_app = None
         self.runner = None
 
     async def setup(self):
@@ -215,17 +219,42 @@ class MailServer:
             # Initialize the database
             await init_db()
 
-            # Initialize the Web admin interface
-            self.web_admin = WebAdmin(self.config, self.storage, AsyncSessionLocal)
-            self.web_app = web.Application(middlewares=[self.web_admin.auth_middleware])
-
-            # Set up routes
-            self.web_app.router.add_get('/admin/login', self.web_admin.login_page)
-            self.web_app.router.add_post('/admin/login', self.web_admin.login)
-            self.web_app.router.add_get('/admin/mailboxes', self.web_admin.mailboxes_page)
-            self.web_app.router.add_get('/admin/mailboxes/list', self.web_admin.list_mailboxes)
-            self.web_app.router.add_post('/admin/mailboxes/create', self.web_admin.create_mailbox)
-            self.web_app.router.add_post('/admin/mailboxes/delete', self.web_admin.delete_mailbox)
+            # Initialize the Web admin interface and client
+            self.web_admin = WebAdmin(self.config, self.storage, self.db_session_factory)
+            self.web_client = WebClient(self.config, self.storage, self.db_session_factory)
+            
+            # Create a single web application
+            self.web_app = web.Application()
+            
+            # Create sub-applications
+            admin_app = web.Application(middlewares=[self.web_admin.auth_middleware])
+            client_app = web.Application(middlewares=[self.web_client.auth_middleware])
+            
+            # Set up admin routes
+            admin_app.router.add_get('/login', self.web_admin.login_page)
+            admin_app.router.add_post('/login', self.web_admin.login)
+            admin_app.router.add_get('/mailboxes', self.web_admin.mailboxes_page)
+            admin_app.router.add_get('/mailboxes/list', self.web_admin.list_mailboxes)
+            admin_app.router.add_post('/mailboxes/create', self.web_admin.create_mailbox)
+            admin_app.router.add_post('/mailboxes/delete', self.web_admin.delete_mailbox)
+            
+            # Set up client routes
+            client_app.router.add_get('/login', self.web_client.login_page)
+            client_app.router.add_post('/login', self.web_client.login)
+            client_app.router.add_get('/mail', self.web_client.mail_page)
+            client_app.router.add_get('/mails', self.web_client.get_mails)
+            client_app.router.add_get('/mails/{mail_id}', self.web_client.get_mail)
+            client_app.router.add_post('/mails', self.web_client.send_mail)
+            
+            # Add sub-applications to main application
+            self.web_app.add_subapp('/admin/', admin_app)
+            self.web_app.add_subapp('/client/', client_app)
+            
+            # Add redirect from root to client login
+            async def redirect_to_client(request):
+                raise web.HTTPFound('/client/login')
+            
+            self.web_app.router.add_get('/', redirect_to_client)
 
             logger.info('Mail server setup completed successfully')
         except Exception as e:
@@ -235,7 +264,7 @@ class MailServer:
     async def start(self):
         try:
             # Start the SMTP server
-            smtp_handler = SMTPHandler(self.config, self.storage, db_session_factory=AsyncSessionLocal)
+            smtp_handler = SMTPHandler(self.config, self.storage, db_session_factory=self.db_session_factory)
 
             # 获取 SSL 上下文（如果使用 TLS）
             ssl_context = self._get_ssl_context() if self.config.use_ssl else None
@@ -253,14 +282,14 @@ class MailServer:
             # 提供一个自定义 factory 来创建我们的 CustomSMTP 实例
             self.smtp_controller.factory = lambda: CustomSMTP(
                 handler=smtp_handler,
-                db_session_factory=AsyncSessionLocal
+                db_session_factory=self.db_session_factory
             )
 
             self.smtp_controller.start()
             logger.info(f'SMTP server started at {self.config.smtp_host}:{self.config.smtp_port}')
 
             # Start the IMAP server
-            imap_factory = create_imap_server(self.config, self.storage, AsyncSessionLocal)
+            imap_factory = create_imap_server(self.config, self.storage, self.db_session_factory)
             self.imap_server = await asyncio.start_server(
                 imap_factory,
                 host=self.config.imap_host,
